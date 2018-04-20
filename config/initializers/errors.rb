@@ -7,5 +7,3 @@ SMTP_SERVER_ERRORS = [
   Net::SMTPUnknownError,
   Timeout::Error
 ].freeze
-
-SMTP_CLIENT_ERRORS = [Net::SMTPFatalError, Net::SMTPSyntaxError].freeze

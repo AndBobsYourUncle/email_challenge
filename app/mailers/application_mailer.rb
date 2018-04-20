@@ -10,7 +10,7 @@ class ApplicationMailer < ActionMailer::Base
     mail.delivery_method.settings = Rails.application.secrets.sendgrid_smtp
   end
 
-  def mailgun_delivery
+  def amazon_delivery
     mail.delivery_method.settings = Rails.application.secrets.amazon_smtp
   end
 end

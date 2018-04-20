@@ -2,7 +2,7 @@
 
 class TestMailer < ApplicationMailer
   after_action :sendgrid_delivery, only: [:demo_email]
-  after_action :mailgun_delivery, only: [:demo_email_fallback]
+  after_action :amazon_delivery, only: [:demo_email_fallback]
 
   def demo_email(email, subject, message)
     @message = message
