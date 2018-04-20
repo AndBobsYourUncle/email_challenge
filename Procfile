@@ -1,2 +1,2 @@
-web: jemalloc.sh bin/start-stunnel puma -C config/puma.rb
-emails: QUEUE=emails jemalloc.sh bin/start-stunnel rails resque:work
+web: bundle exec puma -C config/puma.rb
+emails: QUEUE=emails bundle exec rails resque:work
